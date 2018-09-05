@@ -1,0 +1,270 @@
+﻿html,body{
+  width: 100%;
+}
+#root{
+  width: 100%;
+  overflow: hidden;
+}
+p{
+  margin: 0!important;
+}
+.App {
+  cursor: default;
+  text-align: center;
+  padding: 0px 0px;
+  .App-header{
+    margin: 0;
+    border-bottom: 1px solid #e2e2e2;
+    //box-shadow: 0 2px 5px hsla(0,0%,8%,.1);
+    .top{
+      line-height: 35px;
+      height: 35px;
+      position: relative;
+      padding: 0 20px;
+      .top-item{
+        position: absolute;
+        font-size: 14px;
+        padding: 0 8px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .top-item:nth-of-type(1){
+        left: 20px;
+      }
+      .top-item:nth-of-type(2){
+        left: 60px;
+      }
+      .top-item:nth-of-type(3){
+        left: 100px;
+      }
+      .top-item:nth-of-type(4){
+        left: 140px;
+      }
+      span{
+        font-weight: 600;
+        font-size: 13px;
+      }
+    }
+  }
+}
+//操作区中部
+.main{
+  text-align: left;
+  font-size: 18px;
+  .ant-tabs-content{
+    padding: 10px 20px;
+    background: #fcfcfc;
+  }
+  .tab_wrap{
+    overflow: hidden;
+    .tab_item:nth-of-type(1){
+      .tab_item_bot{
+        font-weight: 400;
+      }
+    }
+    .tab_item:nth-of-type(5){
+      border: none;
+    }
+    .tab_item{
+      border-right: 1px solid #e2e2e2;
+      padding: 0 6px;
+      float: left;
+      font-size: 13px!important;
+      .tab_item_bot,.tab_item_top{
+        font-weight: 600;
+        margin: 10px 0;
+        overflow: hidden;
+        height: 26px;
+        .tab_item_btn_selected{
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          border-radius: 2px;
+          float: left;
+          width: 26px;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
+          margin-right: 6px;
+          cursor: pointer;
+          background: rgba(50, 160, 255,0.9);
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          color: #ffffff;
+        }
+
+      }
+      .tab_item_list{
+        font-weight: 600;
+        margin: 10px 0px;
+        overflow: hidden;
+        height: 62px;
+      }
+      //小按钮
+      .tab_item_btn,.tab_item_btn_big{
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        float: left;
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        margin-right: 6px;
+        cursor: pointer;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        position: relative;
+
+      }
+      .tab_item_btn{
+        img{
+          position: absolute;
+          top: 0;
+          height: 16px;
+          bottom: 0;
+          left:5px;
+          width: 16px;
+          margin: auto;
+        }
+        .white{
+          display: none;
+        }
+        .color{
+          display: block;
+        }
+      }
+      .tab_item_btn_big{
+        width: 55px;
+        height: 62px;
+        line-height: 26px;
+        //margin: 0  0 0;
+        img{
+          position: absolute;
+          top: 6px;
+          height: 24px;
+          left:0;
+          right: 0;
+          width: 24px;
+          margin: auto;
+        }
+        .white{
+          display: none;
+        }
+        .color{
+          display: block;
+        }
+        span{
+          position: absolute;
+          bottom: 2px;
+          left:0;
+          right: 0;
+          width: 26px;
+          margin: auto;
+        }
+      }
+      .tab_item_btn:hover,.tab_item_btn_big:hover{
+        background: rgba(74, 168, 255,0.7);
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        color: #ffffff;
+        .white{
+          display: block;
+        }
+        .color{
+          display: none;
+        }
+      }
+      .title{
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+//tab
+.ant-tabs-bar{
+  padding: 0 20px!important;
+  height: 26px!important;
+  margin: 0!important;
+  border-bottom: 1px solid #d9d9d9!important;
+
+}
+.ant-tabs-tab{
+  height: 25px!important;
+  line-height: 25px!important;
+  font-size: 12px!important;
+  background: #ffffff!important;
+  border: none!important;
+}
+.ant-tabs-tab-active{
+  background: #2b99ff!important;
+  color: #ffffff!important;
+}
+.ant-select-selection,.ant-select-selection__rendered{
+  height: 26px!important;
+  line-height:25px!important;
+  font-size: 13px;
+}
+.ant-select-dropdown-menu-item{
+  height: 26px!important;
+  line-height:25px!important;
+  font-size: 13px;
+  padding: 0 12px!important;
+}
+.ant-select-selection-selected-value{
+  font-weight: 600;
+}
+//颜色盘
+.color-palette-all{
+  overflow: hidden;
+  .color-palette{
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin: 5px;
+    cursor: pointer;
+    border: 1px solid #aaaaaa;
+  }
+  .color-palette:hover{
+    border: 1px solid #666666;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    transition: 0.3s all;
+  }
+}
+
+
+.ant-dropdown-menu-item{
+  font-size: 13px!important;
+}
+
+
+//网格区域
+.App-content{
+  margin:0px auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  overflow: auto;
+  .content{
+  }
+}
+
+//富文本
+.public-DraftStyleDefault-block{
+  margin: 0!important;
+}
+.DraftEditor-root{
+}
